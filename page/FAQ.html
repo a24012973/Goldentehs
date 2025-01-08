@@ -43,3 +43,27 @@
    
   </body>
 </html>
+            <script>
+    // Sélectionne le bouton
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+// Affiche ou cache le bouton en fonction du défilement
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) { // Affiche le bouton après 150px
+        scrollToTopButton.style.display = 'block';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+});
+
+// Fait défiler vers le haut de la page lorsque le bouton est cliqué
+scrollToTopButton.addEventListener('click', () => {
+    // Défilement fluide
+    let interval = setInterval(() => {
+        if (window.scrollY === 0) {
+            clearInterval(interval); // Arrête l'intervalle une fois en haut
+        }
+        window.scrollBy(0, -50); // Monte par incréments de 50px
+    }, 10); // Intervalle de 10ms
+});
+</script>
