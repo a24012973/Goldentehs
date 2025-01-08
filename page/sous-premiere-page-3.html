@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>golden'tech.fr</title>
-    <link rel="stylesheet" href="sous-premiere-page3.css">
+    <link rel="stylesheet" href="../css/sous-premiere-page3.css">
   
 </head>
 <body>
-    <h1>
-        GOLDEN'TECHS
-    </h1>
-   
-    <nav>
-        <div>
-    <nav>
-        <a href="ACCUEIL.html" style="padding-right: 100px;">ACCUEIL</a>
-            <a href="HISTOIRE.html">HISTOIRE</a>
-            <a href="PRODUITS.html" style="padding-left: 90px;">PRODUITS</a>
-            <a href="CONCEPTION.html" style="padding-left: 100px;">CONCEPTION</a>
-            <a href="FAQ.html" style="border-left-style: solid;border-left-width: 0px;padding-left: 55px;">FAQ</a>
-        </nav></div>
-    </nav>
+    <header>
+        <img src="../image/logo1.gif" alt="Logo">
+        <nav>
+            <div>
+        
+            <a href="ACCUEIL.html" style="padding-right: 100px;">ACCUEIL</a>
+                <a href="HISTOIRE.html">HISTOIRE</a>
+                <a href="PRODUITS.html" style="padding-left: 90px;">PRODUITS</a>
+                <a href="CONCEPTION.html" style="padding-left: 100px;">CONCEPTION</a>
+                <a href="FAQ.html" style="border-left-style: solid;border-left-width: 0px;padding-left: 55px;">FAQ</a>
+            </div>
+        </nav>
+    </header>
 
     <article class="container">
 
@@ -32,7 +31,7 @@
             <article class="description-item">Description  : Cet ordinateur de dernière génération allie le côté professionnel et le côté gaming. Le SSD permet non seulement de lancer les jeux rapidement, mais aussi de stocker des projets professionnels. La capacité des ventilateurs à évacuer la chaleur garantit un bon fonctionnement de l'ordinateur. Le pc peux se deplacer avec vous.</article>
             <article class="description-item">Garantie : 12 mois </article>
             
-            <a href="page-payment"><h2>ACHETER MAINTENANT </h2></a>
+            <a href="page-payment.html"><h2>ACHETER MAINTENANT </h2></a>
         </article>
         
     </article>
@@ -41,3 +40,27 @@
 </body>
 
 </html>
+<script>
+    // Sélectionne le bouton
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+// Affiche ou cache le bouton en fonction du défilement
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) { // Affiche le bouton après 150px
+        scrollToTopButton.style.display = 'block';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+});
+
+// Fait défiler vers le haut de la page lorsque le bouton est cliqué
+scrollToTopButton.addEventListener('click', () => {
+    // Défilement fluide
+    let interval = setInterval(() => {
+        if (window.scrollY === 0) {
+            clearInterval(interval); // Arrête l'intervalle une fois en haut
+        }
+        window.scrollBy(0, -50); // Monte par incréments de 50px
+    }, 10); // Intervalle de 10ms
+});
+</script>
