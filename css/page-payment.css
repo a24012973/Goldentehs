@@ -1,0 +1,121 @@
+body {
+    background-color: black; /* Définit le fond en noir */
+    color: rgb(0, 0, 0); /* Rend le texte blanc pour un meilleur contraste */
+    font-family: Arial, sans-serif;
+    margin: 0; /* Supprime les marges par défaut du body */
+    padding: 0; /* Supprime les paddings par défaut du body */
+}
+h1 {
+    text-align: center;
+    color: gold; /* choisi la couleur  */
+    font-family: 'Acme';
+    font-size: 80px;
+}
+
+
+.payment-form {
+    width: 400px;
+    padding: 20px;
+    background-color: #dcbe12;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.payment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    
+}
+
+.form-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+    
+}
+
+.form-group .small-input {
+    width: 48%;
+    display: inline-block;
+    
+}
+
+.form-group .small-input:first-child {
+    margin-right: 4%;
+    
+}
+
+
+
+
+
+h3{
+    font-size: 30px;
+}
+.redirect-button {
+    display: inline-block;
+    padding: 10px 150px;
+    background-color: #007BFF; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+p {
+    font-size: 55px;
+    color: aliceblue;
+    text-align: center;
+}
+nav {
+background-color: rgba(235, 192, 3, 0.75);
+padding-left: 15px;
+}
+
+nav div {
+display: flex;
+justify-content: center;
+gap: 30px;
+}
+
+nav a {
+font-size: 24px;
+font-weight: 400;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-family: Modak, var(--default-font-family);
+line-height: 36px;
+text-align: left;
+z-index: 5;
+-webkit-text-stroke: 1px #ffffff;
+}
+.bébé{
+    display: flex;
+    justify-content: space-around;
+}

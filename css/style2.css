@@ -1,0 +1,66 @@
+/* Général */
+body {
+    background-color: #000; /* Fond noir */
+    color: #f0d22e; /* Texte doré */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titre principal */
+h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ff4500; /* Rouge-orangé pour le sous-titre */
+}
+
+/* Conteneur principal */
+.container {
+    margin-top: 50px;
+}
+
+/* Titre secondaire */
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Gif des yeux */
+.eyes-gif {
+    width: 300px; /* Ajustez selon vos besoins */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Texte sous le gif */
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Ligne sous le texte */
+hr {
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid #f0d22e; /* Ligne dorée */
+}
+
+/* Bouton "Continue" */
+.continue-btn {
+    background-color: #f0d22e; /* Fond doré */
+    color: #000; /* Texte noir */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+.continue-btn:hover {
+    background-color: #ffcc00; /* Doré plus clair */
+}
