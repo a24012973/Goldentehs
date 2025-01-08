@@ -58,7 +58,7 @@
     height: 249px;
     top: 63px;
     left: 531px;
-    background: url(/assets/logo1.gif)
+    background: url(/image/logo1.gif)
       no-repeat center;
     background-size: cover;
     z-index: 1;
@@ -183,7 +183,7 @@
     height: 433px;
     top: 667px;
     left: 215px;
-    background: url(assets/einstein.png)
+    background: url(image/einstein.png)
       no-repeat center;
     background-size: cover;
     z-index: 3;
@@ -266,4 +266,4 @@
     width: 168px;
     padding-right: 320px;
   }
-
+  
