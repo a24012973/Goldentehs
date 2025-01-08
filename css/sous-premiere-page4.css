@@ -58,29 +58,60 @@ Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
 "Source Han Sans CN", sans-serif;
 }
 
-nav {
-background-color: rgba(235, 192, 3, 0.75);
-padding-left: 15px;
-}
-
-nav div {
-display: flex;
-justify-content: center;
-gap: 30px;
-}
-
-nav a {
-font-size: 24px;
-font-weight: 400;
-color: rgb(255, 255, 255);
-text-decoration: none;
-font-family: Modak, var(--default-font-family);
-line-height: 36px;
-text-align: left;
-z-index: 5;
--webkit-text-stroke: 1px #ffffff;
-}
-
-nav a:hover {
-color: #c6aa0a;
-}
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 23px;
+  }
+  
+  header p {
+    font-size: 23px;
+    font-weight: 300;
+    margin-top: 5px;
+    font-family: Modak, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36.141px;
+    z-index: 5;
+    -webkit-text-stroke: 1px #000000;
+    padding-right: 100px;
+    
+  }
+  
+  /* Navigation bar styles */
+  nav {
+    background-color: rgba(29, 29, 29, 0.75);
+    padding-left: 15px;
+    
+  
+  }
+  
+  nav div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border: 2px solid #FFD700;
+    border-left: 50px;
+  }
+  
+  nav a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-family: Modak, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36.141px;
+    text-align: left;
+    z-index: 5;
+    -webkit-text-stroke: 1px #000000;
+    margin-top: 5px;
+    
+  }
+  
+  nav a:hover {
+    color: #FFD700;
+    
+  }
