@@ -1,0 +1,86 @@
+body {
+    background-color: black; /* Définit le fond en noir */
+    color: white; /* Rend le texte blanc pour un meilleur contraste */
+    font-family: Arial, sans-serif;
+    margin: 0; /* Supprime les marges par défaut du body */
+    padding: 0; /* Supprime les paddings par défaut du body */
+}
+h1 {
+    text-align: center;
+    color: gold; /* choisi la couleur  */
+    font-family: 'Acme';
+    font-size: 80px;
+}
+
+
+
+.container {
+    display: flex; /* Aligne les éléments horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    gap: 20px; /* Espace entre l'image et les descriptions */
+}
+
+.large-image {
+    width: 750px; /* Taille de la grande image */
+    height: auto; /* Maintient les proportions */
+}
+
+.descriptions {
+    display: flex; /* Aligne les descriptions en colonne */
+    flex-direction: column;
+    gap: 10px; /* Espace entre les descriptions */
+    
+}
+
+.description-item {
+    background-color: #dda713; /* Couleur de fond pour différencier */
+    padding: auto; /* Ajoute de l'espace autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+h2 {
+    text-align: center; /* Centre le texte horizontalement */
+    font-size: 36px; /* Taille du texte (agrandissement) */
+    font-weight: bold; /* Met le texte en gras */
+    color: #333; /* Couleur du texte */
+    margin-top: 50px; /* Ajoute un espace au-dessus du texte */
+    color: aliceblue;/* choisir la couleur */
+}
+p{
+    font-size: 30px; /* Taille du texte (agrandissement) */
+    font-weight: bold; /* Met le texte en gras */
+    color: aliceblue;/* choisir la couleur */
+}
+:root {
+--default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+"Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+"Source Han Sans CN", sans-serif;
+}
+
+nav {
+background-color: rgba(235, 192, 3, 0.75);
+padding-left: 15px;
+}
+
+nav div {
+display: flex;
+justify-content: center;
+gap: 30px;
+}
+
+nav a {
+font-size: 24px;
+font-weight: 400;
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-family: Modak, var(--default-font-family);
+line-height: 36px;
+text-align: left;
+z-index: 5;
+-webkit-text-stroke: 1px #ffffff;
+}
+
+nav a:hover {
+color: #c6aa0a;
+}
