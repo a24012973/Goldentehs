@@ -1,0 +1,79 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Metal Mania', cursive;
+    background-color: black;
+    color: #FFE27A;
+    text-align: center;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 300vh;
+    padding-top: 20px;
+}
+
+header .logo {
+    margin-bottom: 30px;
+}
+
+header .logo img {
+    width: 898px;
+    height: 249px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.eyes {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.eyes img {
+    max-width: 598px;
+    height: 190px;
+}
+
+
+.input-container label {
+    font-size: 23px;
+    color: #FFE27A;
+    display: block;
+    margin-bottom: px;
+    width: 998px;
+    height: 50px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #FFE27A;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 300px;
+    background: black;
+    color: #FFE27A;
+}
+
+.continue-btn {
+    margin-top: 0px; /* Ajustez cette valeur pour correspondre à la position de l'image */
+    padding-left: 500px;
+    font-size: 20px;
+    font-family: 'Metal Mania', cursive;
+    color: #FFE27A;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.continue-btn:hover {
+    background-color: black;
+}
