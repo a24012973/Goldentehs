@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Metal Mania', cursive;
     background-color: black;
     color: #FFE27A;
@@ -15,42 +15,29 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 300vh;
-    padding-top: 20px;
+    min-height: 100vh;
+    padding: 20px 10px;
 }
 
-header .logo {
-    margin-bottom: 30px;
-}
-
-header .logo img {
-    width: 898px;
-    height: 249px;
-    object-fit: contain;
-    margin: 0 auto;
-}
-
-.eyes {
-    margin-top: 10px;
-    margin-bottom: 40px;
+.logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .eyes img {
-    max-width: 598px;
-    height: 190px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
-
 
 .input-container label {
-    font-size: 23px;
-    color: #FFE27A;
+    font-size: 20px;
+    margin-bottom: 10px;
     display: block;
-    margin-bottom: px;
-    width: 998px;
-    height: 50px;
 }
 
-input[type="text"] {
+.input-container input {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #FFE27A;
@@ -62,18 +49,38 @@ input[type="text"] {
 }
 
 .continue-btn {
-    margin-top: 0px; /* Ajustez cette valeur pour correspondre à la position de l'image */
-    padding-left: 500px;
-    font-size: 20px;
-    font-family: 'Metal Mania', cursive;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
     color: #FFE27A;
     background-color: black;
-    border: none;
+    border: 1px solid #FFE27A;
     border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
     text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .continue-btn:hover {
-    background-color: black;
+    background-color: #FFE27A;
+    color: black;
+}
+
+.presentation-video {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+    .input-container input {
+        width: 90%;
+    }
+
+    .continue-btn {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
 }
