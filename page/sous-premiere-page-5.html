@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>golden'tech.fr</title>
-    <link rel="stylesheet" href="sous-premiere-page5.css">
+    <link rel="stylesheet" href="../css/sous-premiere-page5.css">
 </head>
 <body>
-    <h1>
-        GOLDEN'TECHS
-    </h1>
-   
-  
-    <nav>
-        <article>
-    <nav>
-        <a href="ACCUEIL.html" style="padding-right: 100px;">ACCUEIL</a>
-            <a href="HISTOIRE.html">HISTOIRE</a>
-            <a href="PRODUITS.html" style="padding-left: 90px;">PRODUITS</a>
-            <a href="CONCEPTION.html" style="padding-left: 100px;">CONCEPTION</a>
-            <a href="FAQ.html" style="border-left-style: solid;border-left-width: 0px;padding-left: 55px;">FAQ</a>
-        </nav></article>
-    </nav>
+    <header>
+        <img src="../image/logo1.gif" alt="Logo">
+        <nav>
+            <div>
+        
+            <a href="ACCUEIL.html" style="padding-right: 100px;">ACCUEIL</a>
+                <a href="HISTOIRE.html">HISTOIRE</a>
+                <a href="PRODUITS.html" style="padding-left: 90px;">PRODUITS</a>
+                <a href="CONCEPTION.html" style="padding-left: 100px;">CONCEPTION</a>
+                <a href="FAQ.html" style="border-left-style: solid;border-left-width: 0px;padding-left: 55px;">FAQ</a>
+            </div>
+        </nav>
+    </header>
     <article class="container">
 
         <img src="image/5.jpg" alt="Grande Image" class="large-image">
@@ -31,7 +29,7 @@
             <article class="description-item">Description  : Le META Quest 3S 128 Go, dernier-né des casques de réalité virtuelle, offre une expérience immersive complète grâce à son champ de vision étendu à 360°. Conçu pour vous transporter dans des mondes virtuels plus vrais que nature</article>
             <article class="description-item">Garantie : 2 ans </article>
             
-            <a href="page-payment.html"><h2>ACHETER MAINTENANT </h2></a>
+            <a href="page-payment.html.html"><h2>ACHETER MAINTENANT </h2></a>
         </article>
         
     </article>
@@ -40,3 +38,27 @@
 </body>
 
 </html>
+<script>
+    // Sélectionne le bouton
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+// Affiche ou cache le bouton en fonction du défilement
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) { // Affiche le bouton après 150px
+        scrollToTopButton.style.display = 'block';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+});
+
+// Fait défiler vers le haut de la page lorsque le bouton est cliqué
+scrollToTopButton.addEventListener('click', () => {
+    // Défilement fluide
+    let interval = setInterval(() => {
+        if (window.scrollY === 0) {
+            clearInterval(interval); // Arrête l'intervalle une fois en haut
+        }
+        window.scrollBy(0, -50); // Monte par incréments de 50px
+    }, 10); // Intervalle de 10ms
+});
+</script>
