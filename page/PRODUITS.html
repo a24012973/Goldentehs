@@ -5,28 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>golden'tech.fr</title>
     <style>
-        body {
-            background-color: black; /* Définit le fond en noir */
-            color: white; /* Rend le texte blanc pour un meilleur contraste */
-            font-family: Arial, sans-serif;
-            margin: 0; /* Supprime les marges par défaut du body */
-            padding: 0; /* Supprime les paddings par défaut du body */
-        }
-        h1 {
-            text-align: center;
-            color: gold; /* choisi la couleur  */
-            font-family: 'Acme';
-            font-size: 80px;
-        }
-        h2 {
-            color: gold; /* choisi la couleur  */
-            font-size: 45px;
-        }
-        h3 {
-            color: aliceblue; /* choisi la couleur  */
-            font-size: 20px;
-        }
-        .product-container {
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+body {
+  background-color: #000000;
+  border: 2px solid #FFD700;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 23px;
+}
+
+header p {
+  font-size: 23px;
+  font-weight: 300;
+  margin-top: 5px;
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+  z-index: 5;
+  -webkit-text-stroke: 1px #000000;
+  padding-right: 100px;
+  
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: rgba(29, 29, 29, 0.75);
+  padding-left: 15px;
+  
+
+}
+
+nav div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  border: 2px solid #FFD700;
+  border-left: 50px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+  text-align: left;
+  z-index: 5;
+  -webkit-text-stroke: 1px #000000;
+  margin-top: 5px;
+  
+}
+
+nav a:hover {
+  color: #FFD700;
+  
+}
+
+.video-container {
+  width: 46%; 
+  aspect-ratio: 16 / 9; 
+  border: 2px solid #FFD700;
+  box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto 20px; /* Centrage horizontal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+.video-container iframe {
+  width: 100%; 
+  height: 100%;
+  border: none;
+}
+
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px; 
+  text-align: center; 
+  margin: 20px auto 0; 
+  color: white; 
+}
+.texteAbouge {
+  margin-left:100px;
+  margin-bottom: -94
+}
+.texteAbouge2{
+  margin-left:0px;
+  margin-bottom: -94px;
+  position: absolute
+  
+}
+.texteAbouge3 {
+  margin-left:1000px;
+  margin-bottom: -94
+
+}
+section div div {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section div div:last-child {
+  height: 240px;
+  background-color: #555;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+}
+
+p {
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+  z-index: 5;
+  -webkit-text-stroke: 1px #000000;
+
+
+}
+
+/* Quote and image styles */
+blockquote {
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+  z-index: 5;
+  -webkit-text-stroke: 1px #000000;
+  padding-left: 400px;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgba(29, 29, 29, 0.75);
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+  z-index: 4;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
+  border: 2px solid #FFD700;
+}
+
+footer div div {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+.footer-logos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
+  align-items: center; 
+}
+
+.logo-1 {
+  width: 298px;
+  padding-left: 300px;
+}
+
+.logo-2 {
+  width: 168px;
+  padding-right: 320px;
+}
+.product-container {
             display: flex; /* Aligne les éléments horizontalement */
             align-items: center; /* Centre verticalement les éléments */
             gap: 20px; /* Espace entre les éléments */
@@ -69,10 +246,21 @@
         }
     </style>
 </head>
+
 <body>
-    <h1>
-        GOLDEN'TECHS mdr 
-    </h1>
+    <header>
+        <img src="assets/logo1.gif" alt="Logo">
+        <nav>
+            <div>
+        
+            <a href="ACCUEIL.html" style="padding-right: 100px;">ACCUEIL</a>
+                <a href="HISTOIRE.html">HISTOIRE</a>
+                <a href="PRODUITS.html" style="padding-left: 90px;">PRODUITS</a>
+                <a href="CONCEPTION.html" style="padding-left: 100px;">CONCEPTION</a>
+                <a href="FAQ.html" style="border-left-style: solid;border-left-width: 0px;padding-left: 55px;">FAQ</a>
+            </div>
+        </nav>
+    </header>
     <h2>
         Produit :
     </h2>
@@ -128,10 +316,23 @@
  <p class="product-garantie"> Garantie : 2 ans</p>
     </article>
     <hr>
-    <h1> 1/1 </h1>
     <img src="file:///C:/Users/iskaa/Downloads/Apple-Pay-Logo-2016.jpg"  alt="Image" class="image-bottom-right">
     <img src="file:///C:/Users/iskaa/Downloads/Bitcoin.svg.png"  alt="Image" class="image-bottom-right">
     <img src="file:///C:/Users/iskaa/Downloads/images.png"  alt="Image" class="image-bottom-right">
+    <footer>
+        <div class="footer-container">
+            <div class="contact-section">
+                <p class="footer-title">CONTACTS:</p>
+                <div class="contact-details">
+                    <p>Twitter: GoldenSTECHs</p>
+                    <p>Email: goldenstechs.pro@gmail.com</p>
+                    <p>Assistance Téléphonique: 0427123400</p>
+                </div>
+        <div class="footer-logos">
+            <img src="assets/logo.svg" alt="Logo" class="logo-1">
+            <img src="assets/Logo_amu.png" alt="Logo" class="logo-2">
+        </div>
+    </footer>
     
 </body>
 
