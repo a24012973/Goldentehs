@@ -5,21 +5,12 @@
       "Source Han Sans CN", sans-serif;
   }
   
-  .main-container {
-    overflow: hidden;
-  }
-  
-  .main-container,
-  .main-container * {
-    box-sizing: border-box;
-  }
-  
-  input,
-  select,
-  textarea,
-  button {
-    outline: 0;
-  }
+body {
+  background-color: black;
+
+
+
+}
   
   .main-container {
     position: relative;
@@ -31,6 +22,7 @@
   }
   .pnf {
     position: absolute;
+    border: 2px solid #FFD700;
     width: 100%;
     height: 100%;
     top: 0;
@@ -38,6 +30,7 @@
     background: url(https://img.wattpad.com/0e152fce488ae75df1c5807863928e514c1c37b3/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f2d6a4b57486155554a78334772673d3d2d3932373539353036382e3136323562643461633864353531373532363934333230353033362e676966)
       no-repeat center;
     background-size: cover;
+
   }
   .caca {
     position: absolute;
@@ -45,9 +38,10 @@
     height: 216px;
     top: 0;
     left: 0;
-    background: url(/assets/logo.svg)
+    background: url(/image/logo.svg)
       no-repeat center;
     background-size: cover;
+    
   }
   .group {
     position: absolute;
@@ -59,6 +53,7 @@
       no-repeat center;
     background-size: cover;
     z-index: 1;
+    
   }
   .universal-upscaler {
     position: relative;
@@ -69,17 +64,19 @@
       no-repeat center;
     background-size: cover;
     z-index: 2;
+    
   }
   .de {
     position: absolute;
     width: 433px;
     height: 475px;
     top: 44px;
-    left: 1295px;
-    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/db9ed8c9-b18e-40d7-9b96-eb34d64138e6/dfosskc-49e08cd4-a9b3-43f5-a773-8f7928ed1b7e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RiOWVkOGM5LWIxOGUtNDBkNy05Yjk2LWViMzRkNjQxMzhlNlwvZGZvc3NrYy00OWUwOGNkNC1hOWIzLTQzZjUtYTc3My04Zjc5MjhlZDFiN2UucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gwD2_K1dz5Ocx6a1p3TrVLHYveANkLmqkL9lDzX7Y_Q)
+    left: 1286px;
+    background: url(https://media.tenor.com/O7mAUWw5yGMAAAAi/tom-y-jerry.gif)
       no-repeat center;
     background-size: cover;
     z-index: 8;
+    
   }
   .nos-produits-partage {
     display: flex;
@@ -106,8 +103,9 @@
     height: 480px;
     top: 548px;
     left: 0;
-    background: url()
+    background: url(/image/smartphone-bouclier-securite-coche-signe-fond-sombre-protection-concept-rendu-3d_magic.png)
       no-repeat center;
+      
     background-size: cover;
     z-index: 3;
   }
@@ -140,6 +138,7 @@
       no-repeat center;
     background-size: cover;
     z-index: 7;
+    
   }
   .assistance-24-24 {
     display: flex;
@@ -148,7 +147,7 @@
     position: absolute;
     height: 61px;
     top: 1038px;
-    left: 1109px;
+    right: 1109px;
     color: #ffffff;
     font-family: Modak, var(--default-font-family);
     font-size: 48px;
@@ -160,4 +159,43 @@
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke: 1px #000000;
   }
+  footer {
+    background-color: rgba(29, 29, 29, 0.75);
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Modak, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100.141px;
+    z-index: 4;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px #000000;
+    border: 2px solid #FFD700;
+  }
+  footer-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36.141px;
+  }
+  
+  .footer-logos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+    align-items: center; 
+  }
+  
+  .logo-1 {
+    width: 298px;
+    padding-left: 300px;
+  }
+  
+  .logo-2 {
+    width: 168px;
+    padding-right: 320px;
+  }
+  
   
