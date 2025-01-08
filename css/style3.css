@@ -5,7 +5,7 @@
       "Source Han Sans CN", sans-serif;
   }
   body {
-    color: black;
+    background-color: black;
   }
   .main-container {
     overflow: hidden;
@@ -179,11 +179,11 @@
   }
   .leonardo-phoenix-a-young-black-man {
     position: absolute;
-    width: 500px;
-    height: 500px;
-    top: 617px;
-    left: 105px;
-    background: url(https://img1.picmix.com/output/stamp/normal/5/4/3/3/2503345_89692.png)
+    width: 557px;
+    height: 433px;
+    top: 667px;
+    left: 215px;
+    background: url(assets/einstein.png)
       no-repeat center;
     background-size: cover;
     z-index: 3;
@@ -221,11 +221,49 @@
     left: 500px;
     color: #ffffff;
     font-family: Modak, var(--default-font-family);
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 400;
     line-height: 36.141px;
     text-align: left;
     z-index: 5;
     -webkit-text-stroke: 1px #000000;
   }
+  footer {
+    background-color: rgba(29, 29, 29, 0.75);
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Modak, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36.141px;
+    z-index: 4;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px #000000;
+  }
   
+  footer div div {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  
+  .footer-logos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+    align-items: center; 
+  }
+  
+  .logo-1 {
+    width: 298px;
+    padding-left: 300px;
+  }
+  
+  .logo-2 {
+    width: 168px;
+    padding-right: 320px;
+  }
+
