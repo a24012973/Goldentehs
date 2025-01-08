@@ -36,6 +36,41 @@ header p {
   padding-right: 100px;
   
 }
+/* Global styles for the navigation */
+.navbar {
+    height: 50px;
+    width: 900px;
+}
+
+/* Link styles */
+.nav-link {
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Individual link styles */
+.accueil {
+    padding-right: 100px;
+}
+
+.histoire {
+    /* No additional styles for HISTOIRE */
+}
+
+.produits {
+    padding-left: 90px;
+}
+
+.conception {
+    padding-left: 100px;
+}
+
+.faq {
+    border-left: solid 1px #000;
+    padding-left: 55px;
+}
+
 
 /* Navigation bar styles */
 nav {
