@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>golden'tech.fr</title>
-    <link rel="stylesheet" href="page-payment.css">
+    <link rel="stylesheet" href="../css/page-payment.css">
 </head>
 <body>
-    <h1>
-        GOLDEN'TECHS
-    </h1>
-    <nav>
-        <section>
-    <nav>
-        <a href="ACCUEIL.html" style="padding-right: 100px;">ACCUEIL</a>
-            <a href="HISTOIRE.html">HISTOIRE</a>
-            <a href="PRODUITS.html" style="padding-left: 90px;">PRODUITS</a>
-            <a href="CONCEPTION.html" style="padding-left: 100px;">CONCEPTION</a>
-            <a href="FAQ.html" style="border-left-style: solid;border-left-width: 0px;padding-left: 55px;">FAQ</a>
-        </nav></section>
-    </nav>
+    <header>
+        <img src="../image/logo1.gif" alt="Logo">
+        <nav>
+            <div>
+        
+            <a href="ACCUEIL.html" style="padding-right: 100px;">ACCUEIL</a>
+                <a href="HISTOIRE.html">HISTOIRE</a>
+                <a href="PRODUITS.html" style="padding-left: 90px;">PRODUITS</a>
+                <a href="CONCEPTION.html" style="padding-left: 100px;">CONCEPTION</a>
+                <a href="FAQ.html" style="border-left-style: solid;border-left-width: 0px;padding-left: 55px;">FAQ</a>
+            </div>
+        </nav>
+    </header>
     <p> Comment souhaiter vous payer ?</p>
    <hr>
     
@@ -47,21 +47,45 @@
    
     
   <p>MERCI DE NOUS FAIRE CONFIANCE !</p>
-    <footer>
-        <div class="footer-container">
-            <div class="contact-section">
-                <p class="footer-title">CONTACTS:</p>
-                <div class="contact-details">
-                    <p>Twitter: GoldenSTECHs</p>
-                    <p>Email: goldenstechs.pro@gmail.com</p>
-                    <p>Assistance Téléphonique: 0427123400</p>
-                </div>
-        <div class="footer-logos">
-            <img src="image/logo.svg" alt="Logo" class="logo-1">
-            <img src="image/Logo_amu.png" alt="Logo" class="logo-2">
-        </div>
-    </footer>
-    <button id="scrollToTop">allo selam</button>
+  <button id="scrollToTop">allo selam</button>
+  <footer>
+    <div class="footer-container">
+        <div class="contact-section">
+            <p class="footer-title">CONTACTS:</p>
+            <div class="contact-details">
+                <p>Twitter: GoldenSTECHs</p>
+                <p>Email: goldenstechs.pro@gmail.com</p>
+                <p>Assistance Téléphonique: 0427123400</p>
+            </div>
+    <div class="../image/footer-logos">
+        <img src="../image/logo.svg" alt="Logo" class="logo-1">
+        <img src="../iamge/Logo_amu.png" alt="Logo" class="logo-2">
+    </div>
+</footer>
 </body>
 
 </html>
+<script>
+    // Sélectionne le bouton
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+// Affiche ou cache le bouton en fonction du défilement
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) { // Affiche le bouton après 150px
+        scrollToTopButton.style.display = 'block';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+});
+
+// Fait défiler vers le haut de la page lorsque le bouton est cliqué
+scrollToTopButton.addEventListener('click', () => {
+    // Défilement fluide
+    let interval = setInterval(() => {
+        if (window.scrollY === 0) {
+            clearInterval(interval); // Arrête l'intervalle une fois en haut
+        }
+        window.scrollBy(0, -50); // Monte par incréments de 50px
+    }, 10); // Intervalle de 10ms
+});
+</script>
