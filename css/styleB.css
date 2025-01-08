@@ -36,6 +36,7 @@ header p {
   padding-right: 100px;
   
 }
+/* Global styles for the navigation */
 .navbar {
   height: 50px;
   width: 900px;
@@ -69,8 +70,6 @@ header p {
   border-left: solid 1px #000;
   padding-left: 55px;
 }
-
-
 /* Navigation bar styles */
 nav {
   background-color: rgba(29, 29, 29, 0.75);
@@ -107,6 +106,7 @@ nav a:hover {
   color: #FFD700;
   
 }
+
 .video-container {
   width: 46%; 
   aspect-ratio: 16 / 9; 
@@ -230,6 +230,7 @@ footer div div {
   width: 168px;
   padding-right: 320px;
 }
+
 #scrollToTop {
     position: fixed;
     bottom: 20px;
