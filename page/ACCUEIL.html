@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden's Techs</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Modak:wght@400&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One:wght@400&display=swap" />
     <link rel="stylesheet" href="../css/accueil.css" />
 </head>
 <body>
@@ -17,37 +17,34 @@
 
     <nav>
         <div>
-
-        <a href="ACCUEIL.html">ACCUEIL</a>
+            <a href="ACCUEIL.html">ACCUEIL</a>
             <a href="HISTOIRE.html">HISTOIRE</a>
             <a href="PRODUITS.html">PRODUITS</a>
             <a href="CONCEPTION.html">CONCEPTION</a>
             <a href="FAQ.html">FAQ</a>
         </div>
     </nav>
-        </div>
-    </nav>
 
     <div class="video-container">
-        <iframe src="../image/output(compress-video-online.com) (1).mp4" frameborder="0" allowfullscreen="true"></iframe>
-      </div>
+        <iframe src="../image/output(compress-video-online.com)%20(1).mp4" frameborder="0" allowfullscreen="true"></iframe>
+    </div>
 
-   
-      <div class="container">
+    <div class="container">
         <p class="texteAbouge">UN JOUR UN GRAND SAGE A DIT:</p>
         <blockquote class="citation">
             <p class="texteAbouge2">"Rien ne se crée, rien ne se perd, tout se transforme"</p>
         </blockquote>
     </div>
-        <img src="https://media2.giphy.com/media/8VbpkTaUHYm4CJ4WGm/giphy.gif">
-        <p class="texteAbouge3">CODE PROMO SPECIALE ETUDIANT : "IUT25"</p> 
-        <img 
+
+    <img src="https://media2.giphy.com/media/8VbpkTaUHYm4CJ4WGm/giphy.gif" alt="Animation gif">
+    <p class="texteAbouge3">CODE PROMO SPECIALE ETUDIANT : "IUT25"</p> 
+    <img 
         src="../image/coche-insigne-chanter-fond-sombre-concept-rendu-3d-pour-approuver-confirmation_492780-4813-removebg-preview.png" 
         alt="Icône coche" 
         class="styled-image">
-    </div>
 
-<button id="scrollToTop">allo selam</button>
+    <button id="scrollToTop">allo selam</button>
+
     <footer>
         <div class="footer-container">
             <div class="contact-section">
@@ -57,35 +54,38 @@
                     <p>Email: goldenstechs.pro@gmail.com</p>
                     <p>Assistance Téléphonique: 0427123400</p>
                 </div>
-        <div class="footer-logos">
-            <img src="../image/logo.svg" alt="Logo" class="logo-1">
-            <img src="../image/Logo_amu.png" alt="Logo" class="logo-2">
+            </div>
+            <div class="footer-logos">
+                <img src="../image/logo.svg" alt="Logo" class="logo-1">
+                <img src="../image/Logo_amu.png" alt="Logo" class="logo-2">
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>
 </body>
 </html>
+
 <script>
     // Sélectionne le bouton
-const scrollToTopButton = document.getElementById('scrollToTop');
+    const scrollToTopButton = document.getElementById('scrollToTop');
 
-// Affiche ou cache le bouton en fonction du défilement
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 150) { // Affiche le bouton après 150px
-        scrollToTopButton.style.display = 'block';
-    } else {
-        scrollToTopButton.style.display = 'none';
-    }
-});
-
-// Fait défiler vers le haut de la page lorsque le bouton est cliqué
-scrollToTopButton.addEventListener('click', () => {
-    // Défilement fluide
-    let interval = setInterval(() => {
-        if (window.scrollY === 0) {
-            clearInterval(interval); // Arrête l'intervalle une fois en haut
+    // Affiche ou cache le bouton en fonction du défilement
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 150) { // Affiche le bouton après 150px
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
         }
-        window.scrollBy(0, -50); // Monte par incréments de 50px
-    }, 10); // Intervalle de 10ms
-});
+    });
+
+    // Fait défiler vers le haut de la page lorsque le bouton est cliqué
+    scrollToTopButton.addEventListener('click', () => {
+        // Défilement fluide
+        let interval = setInterval(() => {
+            if (window.scrollY === 0) {
+                clearInterval(interval); // Arrête l'intervalle une fois en haut
+            }
+            window.scrollBy(0, -50); // Monte par incréments de 50px
+        }, 10); // Intervalle de 10ms
+    });
 </script>
