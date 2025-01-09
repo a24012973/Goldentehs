@@ -1,3 +1,10 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
 body {
     background-color: black; /* Définit le fond en noir */
     color: rgb(0, 0, 0); /* Rend le texte blanc pour un meilleur contraste */
