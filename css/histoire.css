@@ -34,7 +34,7 @@ header p {
   z-index: 5;
   -webkit-text-stroke: 1px #000000;
   padding-right: 100px;
-
+  
 }
 /* Global styles for the navigation */
 .navbar {
@@ -75,7 +75,7 @@ header p {
 nav {
   background-color: rgba(29, 29, 29, 0.75);
   padding-left: 15px;
-
+  
 
 }
 
@@ -100,12 +100,12 @@ nav a {
   z-index: 5;
   -webkit-text-stroke: 1px #000000;
   margin-top: 5px;
-
+  
 }
 
 nav a:hover {
   color: #FFD700;
-
+  
 }
 
 .video-container {
@@ -145,7 +145,7 @@ nav a:hover {
   margin-left:0px;
   margin-bottom: -94px;
   position: absolute
-
+  
 }
 .texteAbouge3 {
   margin-left:1000px;
@@ -230,56 +230,66 @@ footer div div {
   width: 168px;
   padding-right: 320px;
 }
-h1{
+h1 {
   margin: 90px;
-  .square
+}
+
+.square {
   width: 30px;
-  height: 45px; 
-  background-color: rgba(255, 255, 255, 0.407); 
-  border: 3px solid black; 
-  border-radius: 100px; 
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.407);
+  border: 3px solid black;
+  border-radius: 100px;
   text-align: center;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke: 1px #000000;
 }
-h2{
+
+h2 {
   margin: 50px;
   color: rgb(252, 252, 252);
-  .square
-  width: auto;
-  height: auto; 
-  background-color: rgba(255, 255, 255, 0.221); 
-  border-radius: 12px; 
-  text-align: center;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke: 1px #000000;
+}
 
-}    h1{
-  margin: 90px;
-  .square
-  width: 30px;
-  height: 45px; 
-  background-color: rgba(255, 255, 255, 0.407); 
-  border: 3px solid black; 
-  border-radius: 100px; 
+.square {
+  width: auto;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.221);
+  border-radius: 12px;
   text-align: center;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke: 1px #000000;
 }
-h2{
+h1 {
+  margin: 90px;
+}
+
+.square {
+  width: 30px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.407);
+  border: 3px solid black;
+  border-radius: 100px;
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
+}
+
+h2 {
   margin: 50px;
   color: rgb(252, 252, 252);
-  .square
-  width: auto;
-  height: auto; 
-  background-color: rgba(255, 255, 255, 0.221); 
-  border-radius: 12px; 
-  text-align: center;
-font-family: Modak, var(--default-font-family);
-text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
--webkit-text-stroke: 1px #000000;
-
 }
+
+.square {
+  width: auto;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.221);
+  border-radius: 12px;
+  text-align: center;
+  font-family: Modak, var(--default-font-family);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
+}
+
 #scrollToTop {
     position: fixed;
     bottom: 20px;
