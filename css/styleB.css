@@ -158,15 +158,12 @@ section div div {
   margin-bottom: 20px;
 }
 
-section div div:last-child {
-  height: 240px;
-  background-color: #555;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ccc;
+.styled-image {
+  width: 400px;
+  height: auto;
+  padding-left: 1000px;
 }
+
 
 p {
   font-family: Modak, var(--default-font-family);
