@@ -1,87 +1,324 @@
 :root {
-    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-        "Source Han Sans CN", sans-serif;
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
 }
 
 body {
-    margin: 0 auto; /* Correctement centré */
-    background-color: black;
-    background-size: cover; /* auto n'est pas toujours pertinent ici */
-    background-attachment: fixed;
-    font-family: Tinos, serif;
-    color: rgb(255, 253, 253); /* Fusion avec la définition de couleur */
+  background-color: #000000;
+  border: 2px solid #FFD700;
+  background-size: cover;
+  background-position: center;
+  color: white;
+font-family: Modak, var(--default-font-family);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 23px;
+}
+
+header p {
+  font-size: 23px;
+  font-weight: 300;
+  margin-top: 5px;
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+  z-index: 5;
+  -webkit-text-stroke: 1px #000000;
+  padding-right: 100px;
+
+}
+/* Global styles for the navigation */
+.navbar {
+  height: 50px;
+  width: 900px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+/* Individual link styles */
+.accueil {
+  padding-right: 120px;
+}
+
+.histoire {
+  /* No additional styles for HISTOIRE */
+}
+
+.produits {
+  padding-left: 90px;
+}
+
+.conception {
+  padding-left: 100px;
+}
+
+.faq {
+  border-left: solid 1px #000;
+  padding-left: 55px;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: rgba(29, 29, 29, 0.75);
+  padding-left: 15px;
+
+
+}
+
+nav div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  border: 2px solid #FFD700;
+  border-left: 50px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+  text-align: left;
+  z-index: 5;
+  -webkit-text-stroke: 1px #000000;
+  margin-top: 5px;
+
+}
+
+nav a:hover {
+  color: #FFD700;
+
+}
+
+.video-container {
+  width: 46%; 
+  aspect-ratio: 16 / 9; 
+  border: 2px solid #FFD700;
+  box-shadow: inset 0px 4px 50px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto 20px; /* Centrage horizontal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+.video-container iframe {
+  width: 100%; 
+  height: 100%;
+  border: none;
+}
+
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px; 
+  text-align: center; 
+  margin: 20px auto 0; 
+  color: white; 
+}
+.texteAbouge {
+  margin-left:100px;
+  margin-bottom: -94
+}
+.texteAbouge2{
+  margin-left:0px;
+  margin-bottom: -94px;
+  position: absolute
+
+}
+.texteAbouge3 {
+  margin-left:1000px;
+  margin-bottom: -94
+
+}
+section div div {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section div div:last-child {
+  height: 240px;
+  background-color: #555;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
 }
 
 p {
-    color: rgb(255, 255, 255);
-    font-size: 1rem; /* Utilisation d'une unité valide */
-    margin: 20px;
-    font-family: Tinos, serif;
-    width: 100%; /* Ajusté pour être valide */
-    height: auto; /* auto est correct ici */
-    background-color: rgba(255, 255, 255, 0.221); 
-    border-radius: 12px; 
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+  z-index: 5;
+  -webkit-text-stroke: 1px #000000;
+
+
+}
+
+/* Quote and image styles */
+blockquote {
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+  z-index: 5;
+  -webkit-text-stroke: 1px #000000;
+  padding-left: 400px;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgba(29, 29, 29, 0.75);
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+  z-index: 4;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
+  border: 2px solid #FFD700;
+}
+
+footer div div {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+.footer-logos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
+  align-items: center; 
+}
+
+.logo-1 {
+  width: 298px;
+  padding-left: 300px;
+}
+
+.logo-2 {
+  width: 168px;
+  padding-right: 320px;
+}
+h1{
+  margin: 90px;
+  .square
+  width: 30px;
+  height: 45px; 
+  background-color: rgba(255, 255, 255, 0.407); 
+  border: 3px solid black; 
+  border-radius: 100px; 
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
+}
+h2{
+  margin: 50px;
+  color: rgb(252, 252, 252);
+  .square
+  width: auto;
+  height: auto; 
+  background-color: rgba(255, 255, 255, 0.221); 
+  border-radius: 12px; 
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
+
+}    h1{
+  margin: 90px;
+  .square
+  width: 30px;
+  height: 45px; 
+  background-color: rgba(255, 255, 255, 0.407); 
+  border: 3px solid black; 
+  border-radius: 100px; 
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
+}
+h2{
+  margin: 50px;
+  color: rgb(252, 252, 252);
+  .square
+  width: auto;
+  height: auto; 
+  background-color: rgba(255, 255, 255, 0.221); 
+  border-radius: 12px; 
+  text-align: center;
+font-family: Modak, var(--default-font-family);
+text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+-webkit-text-stroke: 1px #000000;
+
+}
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: none; /* Caché par défaut */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  /* styles.css */
+  :root {
+    --background-color: white;
+    --text-color: black;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container {
     text-align: center;
-}
-
-h1 {
-    margin: 0 auto; /* Ajustement pour centrer */
-    width: auto;
-    background-color: rgba(255, 255, 255, 0.407);
-    color: white; 
-    border: 3px solid black; 
-    border-radius: 80px; 
-    text-align: center;
-    padding: 10px; /* auto remplacé par une valeur réelle */
-    font-size: 2rem; /* auto remplacé */
-}
-
-h2 {
-    margin: 20px;
-    color: rgb(252, 252, 252);
-    width: 100%; /* Auto n'est pas recommandé ici */
-    background-color: rgba(255, 255, 255, 0.221); 
-    border-radius: 12px; 
-    text-align: center;
-    padding: 10px;
-    font-size: 1.5rem; /* Utilisation d'une unité valide */
-}
-
-span {
-    font-size: 1rem; /* auto remplacé */
-    padding: 10px; /* Ajusté pour une meilleure sémantique */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0; /* auto remplacé */
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block; /* inline est moins flexible pour les marges */
-    margin: 0 10px; /* auto remplacé */
-}
-
-nav ul li a {
-    color: #faf5f5;
-    text-decoration: underline overline #ccc61b;
-    font-size: 1rem; /* auto remplacé */
-}
-
-img {
-    margin: 5%; /* Justifié et simplifié */
-    display: block;
-    height: auto;
-    width: auto; /* auto est correct pour les images */
-}
-
-span {
-    margin: 0 auto; /* Correction des doublons */
-}
-
-body {
-    background-color: rgba(255, 255, 255, 0); /* Correctement défini */
-}
+    margin-top: 50px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  body.dark-mode {
+    --background-color: black;
+    --text-color: white;
+  }
