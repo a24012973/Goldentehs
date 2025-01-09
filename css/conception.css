@@ -64,7 +64,7 @@
     height: 249px;
     top: 63px;
     left: 531px;
-    background: url(/image/logo1.gif)
+    background: url(../image/logo1.gif)
       no-repeat center;
     background-size: cover;
     z-index: 1;
@@ -76,7 +76,7 @@
     margin: auto;
     top: 50%;
     left: 50%;
-    background: url(/image/Group\ 17.png)
+    background: url(../image/Group\ 17.png)
       no-repeat center;
     background-size: cover;
     z-index: 4;
@@ -190,7 +190,7 @@
     height: 433px;
     top: 667px;
     left: 215px;
-    background: url(/image/einstein.png)
+    background: url(../image/einstein.png)
       no-repeat center;
     background-size: cover;
     z-index: 3;
