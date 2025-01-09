@@ -73,8 +73,9 @@
     position: absolute;
     width: 471px;
     height: 396px;
-    top: 172px;
-
+    margin: auto;
+    top: 50%;
+    left: 50%;
     background: url(/image/Group\ 17.png)
       no-repeat center;
     background-size: cover;
