@@ -1,183 +1,211 @@
 :root {
-    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
-      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-      "Source Han Sans CN", sans-serif;
-  }
-  
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
 body {
-  background-color: black;
+background-color: black;
 
 
 
 }
-  
-  .main-container {
-    position: relative;
-    width: 1728px;
-    height: 1117px;
-    margin: 0 auto;
-    background: #ffffff;
-    overflow: hidden;
-  }
-  .pnf {
-    position: absolute;
-    border: 2px solid #FFD700;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: url(https://img.wattpad.com/0e152fce488ae75df1c5807863928e514c1c37b3/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f2d6a4b57486155554a78334772673d3d2d3932373539353036382e3136323562643461633864353531373532363934333230353033362e676966)
-      no-repeat center;
-    background-size: cover;
 
-  }
-  .caca {
-    position: absolute;
-    width: 814px;
-    height: 216px;
-    top: 0;
-    left: 0;
-    background: url(/image/logo.svg)
-      no-repeat center;
-    background-size: cover;
+.main-container {
+  position: relative;
+  width: 1728px;
+  height: 1117px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+.pnf {
+  position: absolute;
+  border: 2px solid #FFD700;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(https://img.wattpad.com/0e152fce488ae75df1c5807863928e514c1c37b3/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f2d6a4b57486155554a78334772673d3d2d3932373539353036382e3136323562643461633864353531373532363934333230353033362e676966)
+    no-repeat center;
+  background-size: cover;
+
+}
+.caca {
+  position: absolute;
+  width: 814px;
+  height: 216px;
+  top: 0;
+  left: 0;
+  background: url(/image/logo.svg)
+    no-repeat center;
+  background-size: cover;
+  
+}
+.group {
+  position: absolute;
+  width: 898px;
+  height: 249px;
+  top: 32px;
+  left: 451px;
+  background: url()
+    no-repeat center;
+  background-size: cover;
+  z-index: 1;
+  
+}
+.universal-upscaler {
+  position: relative;
+  width: 68px;
+  height: 194px;
+  margin: 50px 0 0 98px;
+  background: url()
+    no-repeat center;
+  background-size: cover;
+  z-index: 2;
+  
+}
+.de {
+  position: absolute;
+  width: 433px;
+  height: 475px;
+  top: 44px;
+  left: 1286px;
+  background: url(https://media.tenor.com/O7mAUWw5yGMAAAAi/tom-y-jerry.gif)
+    no-repeat center;
+  background-size: cover;
+  z-index: 8;
+  
+}
+.nos-produits-partage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 1101px;
+  height: 174px;
+  top: 302px;
+  left: 390px;
+  color: #ffffff;
+  font-family: Modak, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 96.375px;
+  text-align: left;
+  z-index: 6;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
+}
+.leonardo-phoenix {
+  position: absolute;
+  width: 400px;
+  height: 480px;
+  top: 548px;
+  left: 0;
+  background: url(/image/smartphone-bouclier-securite-coche-signe-fond-sombre-protection-concept-rendu-3d_magic.png)
+    no-repeat center;
     
-  }
-  .group {
-    position: absolute;
-    width: 898px;
-    height: 249px;
-    top: 32px;
-    left: 451px;
-    background: url()
-      no-repeat center;
-    background-size: cover;
-    z-index: 1;
-    
-  }
-  .universal-upscaler {
-    position: relative;
-    width: 68px;
-    height: 194px;
-    margin: 50px 0 0 98px;
-    background: url()
-      no-repeat center;
-    background-size: cover;
-    z-index: 2;
-    
-  }
-  .de {
-    position: absolute;
-    width: 433px;
-    height: 475px;
-    top: 44px;
-    left: 1286px;
-    background: url(https://media.tenor.com/O7mAUWw5yGMAAAAi/tom-y-jerry.gif)
-      no-repeat center;
-    background-size: cover;
-    z-index: 8;
-    
-  }
-  .nos-produits-partage {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    width: 1101px;
-    height: 174px;
-    top: 302px;
-    left: 390px;
-    color: #ffffff;
-    font-family: Modak, var(--default-font-family);
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 96.375px;
-    text-align: left;
-    z-index: 6;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke: 1px #000000;
-  }
-  .leonardo-phoenix {
-    position: absolute;
-    width: 400px;
-    height: 480px;
-    top: 548px;
-    left: 0;
-    background: url(/image/smartphone-bouclier-securite-coche-signe-fond-sombre-protection-concept-rendu-3d_magic.png)
-      no-repeat center;
-      
-    background-size: cover;
-    z-index: 3;
+  background-size: cover;
+  z-index: 3;
+}
+
+.assistance-24-24 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 61px;
+  top: 1038px;
+  right: 1109px;
+  color: #ffffff;
+  font-family: Modak, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 61px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 5;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
+}
+footer {
+  background-color: rgba(29, 29, 29, 0.75);
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Modak, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100.141px;
+  z-index: 4;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000000;
+  border: 2px solid #FFD700;
+}
+footer-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.141px;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
+  align-items: center; 
+}
+
+.logo-1 {
+  width: 298px;
+  padding-left: 300px;
+}
+
+.logo-2 {
+  width: 168px;
+  padding-right: 320px;
+}
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none; /* Caché par défaut */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+  /* styles.css */
+  :root {
+    --background-color: white;
+    --text-color: black;
   }
   
-  .assistance-24-24 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 61px;
-    top: 1038px;
-    right: 1109px;
-    color: #ffffff;
-    font-family: Modak, var(--default-font-family);
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 61px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 5;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke: 1px #000000;
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
   }
-  footer {
-    background-color: rgba(29, 29, 29, 0.75);
-    padding: 20px;
-    margin-top: 40px;
+  
+  .container {
     text-align: center;
-    color: #ffffff;
-    font-family: Modak, var(--default-font-family);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 100.141px;
-    z-index: 4;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke: 1px #000000;
-    border: 2px solid #FFD700;
-  }
-  footer-title {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36.141px;
+    margin-top: 50px;
   }
   
-  .footer-logos {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 15px;
-    align-items: center; 
-  }
-  
-  .logo-1 {
-    width: 298px;
-    padding-left: 300px;
-  }
-  
-  .logo-2 {
-    width: 168px;
-    padding-right: 320px;
-  }
-  #scrollToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 18px;
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    display: none; /* Caché par défaut */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  body.dark-mode {
+    --background-color: black;
+    --text-color: white;
   }
