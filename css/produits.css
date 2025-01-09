@@ -36,6 +36,40 @@
     padding-right: 100px;
     
   }
+  /* Global styles for the navigation */
+.navbar {
+  height: 50px;
+  width: 900px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+/* Individual link styles */
+.accueil {
+  padding-right: 120px;
+}
+
+.histoire {
+  /* No additional styles for HISTOIRE */
+}
+
+.produits {
+  padding-left: 90px;
+}
+
+.conception {
+  padding-left: 100px;
+}
+
+.faq {
+  border-left: solid 1px #000;
+  padding-left: 55px;
+}
   
   /* Navigation bar styles */
   nav {
@@ -237,3 +271,4 @@
               width: 100px; /* Largeur de l'image */
               height: auto; /* Maintient les proportions */
           }
+          
