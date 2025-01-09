@@ -6,14 +6,17 @@
   }
   body {
     background-color: black;
+    border: 2px solid #FFD700;
   }
   .main-container {
     overflow: hidden;
+    
   }
   
   .main-container,
   .main-container * {
     box-sizing: border-box;
+    
   }
   
   input,
@@ -30,6 +33,7 @@
     margin: 0 auto;
     background: #ffffff;
     overflow: hidden;
+    
   }
   .line {
     position: absolute;
@@ -40,6 +44,7 @@
     background: black
       no-repeat center;
     background-size: cover;
+    border: 2px solid #FFD700;
   }
   .universal-upscaler {
     position: absolute;
@@ -51,6 +56,7 @@
       no-repeat center;
     background-size: cover;
     z-index: 2;
+    
   }
   .group {
     position: absolute;
@@ -68,8 +74,8 @@
     width: 471px;
     height: 396px;
     top: 172px;
-    left: 445px;
-    background: url()
+
+    background: url(/image/Group\ 17.png)
       no-repeat center;
     background-size: cover;
     z-index: 4;
@@ -243,11 +249,11 @@
     -webkit-text-stroke: 1px #000000;
   }
   
-  footer div div {
-    font-size: 14px;
-    line-height: 1.5;
+  footer-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36.141px;
   }
-  
   
   .footer-logos {
     display: flex;
@@ -266,17 +272,4 @@
     width: 168px;
     padding-right: 320px;
   }
-  #scrollToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 18px;
-    cursor: pointer;
-    display: none; /* Caché par défaut */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  }
+  
