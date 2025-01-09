@@ -17,54 +17,55 @@
       <span class="nos-produits-partage">
         NOS PRODUITS T’ONT PLUS? PARTAGE LE SITE A TON ENTOURAGE
       </span>
-      
       <div class="leonardo-phoenix"></div>
       <div class="leonardo-phoenix-animated"></div>
       <span class="assistance-24-24">ASSISTANCE 24/24</span>
-      
-      
-
-
     </div>
+
     <button id="scrollToTop">allo selam</button>
+
     <footer>
       <div class="footer-container">
-          <div class="contact-section">
-              <p class="footer-title">CONTACTS:</p>
-              <div class="contact-details">
-                  <p>Twitter: GoldenSTECHs</p>
-                  <p>Email: goldenstechs.pro@gmail.com</p>
-                  <p>Assistance Téléphonique: 0427123400</p>
-              </div>
-      <div class="footer-logos">
+        <div class="contact-section">
+          <p class="footer-title">CONTACTS:</p>
+          <div class="contact-details">
+            <p>Twitter: GoldenSTECHs</p>
+            <p>Email: goldenstechs.pro@gmail.com</p>
+            <p>Assistance Téléphonique: 0427123400</p>
+          </div>
+        </div> <!-- Closing the contact-section div here -->
+        <div class="footer-logos">
           <img src="../image/logo.svg" alt="Logo" class="logo-1">
           <img src="../image/Logo_amu.png" alt="Logo" class="logo-2">
-      </div>
-  </footer>
-  <script src="script.js"></script>
+        </div>
+      </div> <!-- Closing the footer-container div here -->
+    </footer> <!-- Closing the footer tag -->
+
+    <script src="script.js"></script> <!-- Script tag placed correctly before closing body tag -->
   </body>
 </html>
-            <script>
+
+<script>
     // Sélectionne le bouton
-const scrollToTopButton = document.getElementById('scrollToTop');
+    const scrollToTopButton = document.getElementById('scrollToTop');
 
-// Affiche ou cache le bouton en fonction du défilement
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 150) { // Affiche le bouton après 150px
-        scrollToTopButton.style.display = 'block';
-    } else {
-        scrollToTopButton.style.display = 'none';
-    }
-});
-
-// Fait défiler vers le haut de la page lorsque le bouton est cliqué
-scrollToTopButton.addEventListener('click', () => {
-    // Défilement fluide
-    let interval = setInterval(() => {
-        if (window.scrollY === 0) {
-            clearInterval(interval); // Arrête l'intervalle une fois en haut
+    // Affiche ou cache le bouton en fonction du défilement
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 150) { // Affiche le bouton après 150px
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
         }
-        window.scrollBy(0, -50); // Monte par incréments de 50px
-    }, 10); // Intervalle de 10ms
-});
+    });
+
+    // Fait défiler vers le haut de la page lorsque le bouton est cliqué
+    scrollToTopButton.addEventListener('click', () => {
+        // Défilement fluide
+        let interval = setInterval(() => {
+            if (window.scrollY === 0) {
+                clearInterval(interval); // Arrête l'intervalle une fois en haut
+            }
+            window.scrollBy(0, -50); // Monte par incréments de 50px
+        }, 10); // Intervalle de 10ms
+    });
 </script>
