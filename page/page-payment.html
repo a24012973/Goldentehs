@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Modak:wght@400&display=swap" />
-    <link rel="stylesheet" href="/css/page-payment.css">
     <title>Golden's Techs</title>
+    <link rel="stylesheet" href="../css/page-payment.css">
 </head>
+
 <body>
     <header>
         <img src="../image/logo1.gif" alt="Logo">
@@ -25,25 +26,42 @@
    <hr>
     
    <section class="bébé">
-    <form class="payment-form">
-        <h2>Mettez vos identifiant Binance </h2>
-        <label for="identifiant"><h3>Binance</h3></label>
-        <a href="https://accounts.binance.com/fr/register?ref=X4VWE34W&gad_source=1&gclid=EAIaIQobChMI0Imk39veigMVxT8GAB2YeAgBEAAYASAAEgKbcPD_BwE" class="redirect-button">Connexion</a>
+    <!-- Binance Form -->
+    <form class="payment-form" action="https://accounts.binance.com/fr/login" method="get">
+        <h2>Mettez vos identifiants Binance</h2>
+        <label for="binance-username">Identifiant :</label>
+        <input type="text" id="binance-username" name="username" placeholder="Votre identifiant Binance" required>
+        <br>
+        <label for="binance-password">Mot de passe :</label>
+        <input type="password" id="binance-password" name="password" placeholder="Votre mot de passe" required>
+        <br>
+        <button type="submit">Se connecter</button>
     </form>
-    <form class="payment-form">
-        <h2>Mettez vos identifiant Paypal </h2>
-        
-        <label for="identifiant"><h3>Paypal</h3></label>
-        <a href="https://www.paypal.com/signin?locale.x=fr_FR" class="redirect-button">Connexion</a>
 
+    <!-- PayPal Form -->
+    <form class="payment-form" action="https://www.paypal.com/signin" method="get">
+        <h2>Mettez vos identifiants PayPal</h2>
+        <label for="paypal-username">Identifiant :</label>
+        <input type="text" id="paypal-username" name="username" placeholder="Votre identifiant PayPal" required>
+        <br>
+        <label for="paypal-password">Mot de passe :</label>
+        <input type="password" id="paypal-password" name="password" placeholder="Votre mot de passe" required>
+        <br>
+        <button type="submit">Se connecter</button>
     </form>
-    <form class="payment-form">
-        <h2>Mettez vos identifiant Apple Pay </h2>
-        
-        <label for="identifiant"><h3>Appel Pay</h3></label>
-        <a href="https://secure6.store.apple.com/fr/shop/signIn?ssi=1AAABlDa37jEgJcv4BLgfP6T2xw-t1eppefJ5BeVXcrzgPf6BE39m52oAAAAbaHR0cHM6Ly93d3cuYXBwbGUuY29tL2ZyL3x8AAIB2Plo8TocDt9HqeC8r0u-00x8RmIB-iPNItnsp40b_VY" class="redirect-button">Connexion</a>
+
+    <!-- Apple Pay Form -->
+    <form class="payment-form" action="https://secure6.store.apple.com/fr/shop/signIn" method="get">
+        <h2>Mettez vos identifiants Apple Pay</h2>
+        <label for="apple-username">Identifiant :</label>
+        <input type="text" id="apple-username" name="username" placeholder="Votre identifiant Apple Pay" required>
+        <br>
+        <label for="apple-password">Mot de passe :</label>
+        <input type="password" id="apple-password" name="password" placeholder="Votre mot de passe" required>
+        <br>
+        <button type="submit">Se connecter</button>
     </form>
-   </section>
+</section>
    
    
     
