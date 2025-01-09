@@ -4,76 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GOLDENS'TECHS</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Modak:wght@400&display=swap" />
-    <link rel="stylesheet" href="css/histoire.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Modak:wght@400&display=swap">
+    <link rel="stylesheet" href="../css/histoire.css">
 </head>
 <body>
     <button id="theme-toggle">Changer de mode</button>
     <header>
-        <img src="image/logo1.gif" alt="Logo">
+        <img src="../image/logo1.gif" alt="Logo de GOLDENS'TECHS">
         <nav>
             <div>
-        
-            <a href="ACCUEIL.html" style="padding-right: 100px;">ACCUEIL</a>
+                <a href="ACCUEIL.html" style="padding-right: 100px;">ACCUEIL</a>
                 <a href="HISTOIRE.html">HISTOIRE</a>
                 <a href="PRODUITS.html" style="padding-left: 90px;">PRODUITS</a>
                 <a href="CONCEPTION.html" style="padding-left: 100px;">CONCEPTION</a>
-                <a href="FAQ.html" style="border-left-style: solid;border-left-width: 0px;padding-left: 55px;">FAQ</a>
+                <a href="FAQ.html" style="border-left-style: solid; border-left-width: 0px; padding-left: 55px;">FAQ</a>
             </div>
         </nav>
     </header>
-        <h1> Comment avons nous eu cette idée?<div class="square"></div></h1>
-        <p> <h2> L'idée de créer des PC hybrides est née en 2016 suite à une publication sur Reddit montrant un ordinateur connecté à une 
-        PlayStation 4. Cette image a suscité notre curiosité, mais l'idée est restée en suspens jusqu'en 2024. C'est alors que nous 
-        avons décidé de concrétiser ce projet et de commercialiser des PC hybrides. Après plusieurs années de réflexion, 
-        GOLDENS’TECHS a vu le jour, avec pour mission de développer et vendre des PC hybrides respectueux du développement 
-        durable le tout en préservant la santé de nos employés. Nous nous engageons à rendre cette technologie accessible 
-        à tous et à privilégier des produits Made in France pour soutenir un développement économique stable.</h2> </p>
-        <h1> L’objectif de notre entreprise?<div class="square"></div></h1>
-        <p> <h2> L'objectif principal de notre entreprise est de recycler des ordinateurs et des PS4 
-        pour créer des machines plus puissantes, adaptées à la programmation, aux jeux ou à un usage personnel. Ces nouveaux PC 
-        seront faciles à utiliser et accessibles à tous. Nous visons à développer une clientèle dès la première année et à nous faire 
-        connaître.Notre but est de proposer un système tout-en-un, tout en contribuant au recyclage des composants  et en donnant une 
-        seconde vie aux PS4, ce qui aura un impact positif sur la planète.</h2> </p>
-    <button id="scrollToTop">allo selam</button>
-        <footer>
-            <div class="footer-container">
-                <div class="contact-section">
-                    <p class="footer-title">CONTACTS:</p>
-                    <div class="contact-details">
-                        <p>Twitter: GoldenSTECHs</p>
-                        <p>Email: goldenstechs.pro@gmail.com</p>
-                        <p>Assistance Téléphonique: 0427123400</p>
-                    </div>
-            <div class="footer-logos">
-                <img src="image/logo.svg" alt="Logo" class="logo-1">
-                <img src="image/Logo_amu.png" alt="Logo" class="logo-2">
+    
+    <main>
+        <section>
+            <h1>Comment avons-nous eu cette idée ?</h1>
+            <div class="square"></div>
+            <p>
+                L'idée de créer des PC hybrides est née en 2016 suite à une publication sur Reddit montrant un ordinateur connecté à une 
+                PlayStation 4. Cette image a suscité notre curiosité, mais l'idée est restée en suspens jusqu'en 2024. C'est alors que nous 
+                avons décidé de concrétiser ce projet et de commercialiser des PC hybrides. Après plusieurs années de réflexion, 
+                GOLDENS’TECHS a vu le jour, avec pour mission de développer et vendre des PC hybrides respectueux du développement 
+                durable tout en préservant la santé de nos employés. Nous nous engageons à rendre cette technologie accessible 
+                à tous et à privilégier des produits Made in France pour soutenir un développement économique stable.
+            </p>
+        </section>
+        
+        <section>
+            <h1>L’objectif de notre entreprise ?</h1>
+            <div class="square"></div>
+            <p>
+                L'objectif principal de notre entreprise est de recycler des ordinateurs et des PS4 
+                pour créer des machines plus puissantes, adaptées à la programmation, aux jeux ou à un usage personnel. Ces nouveaux PC 
+                seront faciles à utiliser et accessibles à tous. Nous visons à développer une clientèle dès la première année et à nous faire 
+                connaître. Notre but est de proposer un système tout-en-un, tout en contribuant au recyclage des composants et en donnant une 
+                seconde vie aux PS4, ce qui aura un impact positif sur la planète.
+            </p>
+        </section>
+    </main>
+    
+    <button id="scrollToTop" style="display: none;">Retour en haut</button>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="contact-section">
+                <p class="footer-title">CONTACTS :</p>
+                <div class="contact-details">
+                    <p>Twitter : GoldenSTECHs</p>
+                    <p>Email : goldenstechs.pro@gmail.com</p>
+                    <p>Assistance Téléphonique : 0427123400</p>
+                </div>
             </div>
-        </footer>
-        <script src="script.js"></script>   
+            <div class="footer-logos">
+                <img src="../image/logo.svg" alt="Logo principal" class="logo-1">
+                <img src="../image/Logo_amu.png" alt="Logo AMU" class="logo-2">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>   
+    <script>
+        // Sélectionne le bouton
+        const scrollToTopButton = document.getElementById('scrollToTop');
+
+        // Affiche ou cache le bouton en fonction du défilement
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 150) { // Affiche le bouton après 150px
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        // Fait défiler vers le haut de la page lorsque le bouton est cliqué
+        scrollToTopButton.addEventListener('click', () => {
+            // Défilement fluide
+            let interval = setInterval(() => {
+                if (window.scrollY === 0) {
+                    clearInterval(interval); // Arrête l'intervalle une fois en haut
+                }
+                window.scrollBy(0, -50); // Monte par incréments de 50px
+            }, 10); // Intervalle de 10ms
+        });
+    </script>
 </body>
 </html>
-<script>
-    // Sélectionne le bouton
-const scrollToTopButton = document.getElementById('scrollToTop');
-
-// Affiche ou cache le bouton en fonction du défilement
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 150) { // Affiche le bouton après 150px
-        scrollToTopButton.style.display = 'block';
-    } else {
-        scrollToTopButton.style.display = 'none';
-    }
-});
-
-// Fait défiler vers le haut de la page lorsque le bouton est cliqué
-scrollToTopButton.addEventListener('click', () => {
-    // Défilement fluide
-    let interval = setInterval(() => {
-        if (window.scrollY === 0) {
-            clearInterval(interval); // Arrête l'intervalle une fois en haut
-        }
-        window.scrollBy(0, -50); // Monte par incréments de 50px
-    }, 10); // Intervalle de 10ms
-});
-</script>
