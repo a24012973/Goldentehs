@@ -190,7 +190,7 @@
     height: 433px;
     top: 667px;
     left: 215px;
-    background: url(image/einstein.png)
+    background: url(/image/einstein.png)
       no-repeat center;
     background-size: cover;
     z-index: 3;
